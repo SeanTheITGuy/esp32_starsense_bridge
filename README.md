@@ -171,7 +171,7 @@ The checker sends all 256 byte values including NUL, XON/XOFF and high-bit bytes
 5. Only after both interfaces pass, replace test echo with independent buffered USB↔UART paths. Verify bytes, ordering, short packets, disconnect cancellation, bounded buffers and explicit overflow/error reporting. Never replay stale commands after reconnect.
 6. Verify `Kx` → `x#` through RFCOMM, then align normally with StarSense and use INDI **Celestron GPS**, serial port `/dev/rfcomm0`. Confirm coordinates before any controlled small GoTo, watch clearance, and repeat after reconnect. The handset maintains alignment; do not access AUX or replace its alignment model.
 
-The UART echo image must be replaced before stages 4–6. Full bridge functionality is not yet implemented.
+The UART echo image must be replaced before stages 4–6. 
 
 ## USB enumeration-only image (stage 3)
 
