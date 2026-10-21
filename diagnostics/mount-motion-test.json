@@ -1,0 +1,80 @@
+[
+  {
+    "label": "Echo TX",
+    "hex": "4b 78",
+    "text": "b'Kx'",
+    "time": 1792601342.293206
+  },
+  {
+    "label": "Echo RX",
+    "hex": "78 23",
+    "text": "b'x#'",
+    "time": 1792601342.3311977
+  },
+  {
+    "label": "Position before TX",
+    "hex": "7a",
+    "text": "b'z'",
+    "time": 1792601342.3312235
+  },
+  {
+    "label": "Position before RX",
+    "hex": "30 30 30 30 30 30 30 30 2c 30 30 30 30 30 30 30 30 23",
+    "text": "b'00000000,00000000#'",
+    "time": 1792601342.4391909
+  },
+  {
+    "label": "Azimuth positive rate 1 TX",
+    "hex": "50 02 10 24 01 00 00 00",
+    "text": "b'P\\x02\\x10$\\x01\\x00\\x00\\x00'",
+    "time": 1792601342.4392161
+  },
+  {
+    "label": "Azimuth STOP TX",
+    "hex": "50 02 10 24 00 00 00 00",
+    "text": "b'P\\x02\\x10$\\x00\\x00\\x00\\x00'",
+    "time": 1792601343.189293
+  },
+  {
+    "label": "Start/stop acknowledgements",
+    "hex": "23 23",
+    "text": "b'##'",
+    "time": 1792601343.270186
+  },
+  {
+    "label": "Position after TX",
+    "hex": "7a",
+    "text": "b'z'",
+    "time": 1792601343.7702465
+  },
+  {
+    "label": "Position after RX",
+    "hex": "30 30 30 30 34 46 30 30 2c 30 30 30 30 30 30 30 30 23",
+    "text": "b'00004F00,00000000#'",
+    "time": 1792601343.8811831
+  },
+  {
+    "label": "Final stop TX",
+    "hex": "50 02 10 24 00 00 00 00",
+    "text": "b'P\\x02\\x10$\\x00\\x00\\x00\\x00'",
+    "time": 1792601343.8812084
+  },
+  {
+    "label": "Final stop RX",
+    "hex": "23",
+    "text": "b'#'",
+    "time": 1792601343.95418
+  },
+  {
+    "label": "Final echo TX",
+    "hex": "4b 78",
+    "text": "b'Kx'",
+    "time": 1792601343.9542038
+  },
+  {
+    "label": "Final echo RX",
+    "hex": "78 23",
+    "text": "b'x#'",
+    "time": 1792601343.9831781
+  }
+]

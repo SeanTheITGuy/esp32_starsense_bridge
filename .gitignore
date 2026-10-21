@@ -1,0 +1,32 @@
+# ESP-IDF/toolchains installed locally (several GB).
+/.toolchains/
+
+# Generated ESP-IDF build directories and downloaded managed components.
+/build/
+/build-*/
+/managed_components/
+
+# Generated machine/build-specific configs. Keep reproducible defaults.
+/sdkconfig
+/sdkconfig.*
+!/sdkconfig.defaults
+!/sdkconfig.*.defaults
+
+# Python virtual environments and caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor/OS temporary files.
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Keep dependencies.lock, source, docs and curated diagnostics/ evidence.
+# Do not blanket-ignore *.log: documentation references the hardware test logs.

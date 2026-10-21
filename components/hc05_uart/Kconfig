@@ -1,0 +1,14 @@
+menu "StarSense HC-05 UART test"
+config HC05_BAUD
+    int "HC-05 data-mode UART baud"
+    range 1200 115200
+    default 9600
+config HC05_TX_GPIO
+    int "ESP32-S3 UART1 TX GPIO"
+    range 0 48
+    default 17
+config HC05_RX_GPIO
+    int "ESP32-S3 UART1 RX GPIO"
+    range 0 48
+    default 16
+endmenu

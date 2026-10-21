@@ -1,0 +1,68 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xde4
+load:0x403cb700,len:0x2f58
+entry 0x403c8904
+I (24) boot: ESP-IDF v6.1 2nd stage bootloader
+I (25) boot: compile time Oct 21 2026 10:35:10
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (27) boot: efuse block revision: v1.3
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 16MB
+I (43) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (50) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00100000
+I (76) boot: End of partition table
+I (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0aed0h ( 44752) map
+I (94) esp_image: segment 1: paddr=0001aef8 vaddr=3fc90f00 size=031bch ( 12732) load
+I (97) esp_image: segment 2: paddr=0001e0bc vaddr=40374000 size=01f5ch (  8028) load
+I (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=14e20h ( 85536) map
+I (124) esp_image: segment 4: paddr=00034e48 vaddr=40375f5c size=0af40h ( 44864) load
+I (135) esp_image: segment 5: paddr=0003fd90 vaddr=50000000 size=00024h (    36) load
+I (141) boot: Loaded app from partition at offset 0x10000
+I (141) boot: Disabling RNG early entropy source...
+I (152) cpu_start: Multicore app
+I (161) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (162) cpu_start: Pro cpu start user code
+I (162) cpu_start: cpu freq: 160000000 Hz
+I (163) app_init: Application information:
+I (167) app_init: Project name:     starsense_bridge
+I (172) app_init: App version:      1
+I (175) app_init: Compile time:     Oct 21 2026 10:34:50
+I (180) app_init: ELF file SHA256:  a8862e718...
+I (184) app_init: ESP-IDF:          v6.1
+I (188) efuse_init: Min chip rev:     v0.0
+I (192) efuse_init: Max chip rev:     v0.99 
+I (196) efuse_init: Chip rev:         v0.2
+I (200) heap_init: Initializing. RAM available for dynamic allocation:
+I (206) heap_init: At 3FC94B00 len 00054C10 (339 KiB): RAM
+I (211) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (216) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (222) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (228) spi_flash: detected chip: generic
+I (231) spi_flash: flash io: dio
+I (234) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (240) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (247) main_task: Started on CPU0
+I (247) main_task: Calling app_main()
+I (257) uart: queue free spaces: 32
+I (257) hc05_diag: READ-ONLY HC-05 diagnostic; USB host disabled; KEY/EN not driven
+I (267) hc05_diag: No module configuration writes or handset commands are sent
+I (3267) hc05_diag: Probing AT query at 9600 baud
+I (3267) hc05_diag: UART query: AT
+
+W (4817) hc05_diag: No response (module may require hardware AT-mode entry)
+I (4817) hc05_diag: Probing AT query at 38400 baud
+I (4817) hc05_diag: UART query: AT
+
+W (6367) hc05_diag: No response (module may require hardware AT-mode entry)
+I (6367) hc05_diag: Diagnostic finished: AT responder=0. UART restored to 9600; USB remains disabled

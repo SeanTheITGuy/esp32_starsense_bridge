@@ -1,0 +1,99 @@
+[
+  {
+    "label": "Echo TX",
+    "hex": "4b 78",
+    "text": "b'Kx'",
+    "time": 1792601474.1292121
+  },
+  {
+    "label": "Echo RX",
+    "hex": "78 23",
+    "text": "b'x#'",
+    "time": 1792601474.1671739
+  },
+  {
+    "label": "Position before TX",
+    "hex": "7a",
+    "text": "b'z'",
+    "time": 1792601474.1671882
+  },
+  {
+    "label": "Position before RX",
+    "hex": "30 30 36 31 36 34 30 30 2c 30 30 30 30 30 43 30 30 23",
+    "text": "b'00616400,00000C00#'",
+    "time": 1792601474.2986186
+  },
+  {
+    "label": "Azimuth positive rate 7 TX",
+    "hex": "50 02 10 24 07 00 00 00",
+    "text": "b'P\\x02\\x10$\\x07\\x00\\x00\\x00'",
+    "time": 1792601474.298638
+  },
+  {
+    "label": "Azimuth STOP TX",
+    "hex": "50 02 10 24 00 00 00 00",
+    "text": "b'P\\x02\\x10$\\x00\\x00\\x00\\x00'",
+    "time": 1792601478.298707
+  },
+  {
+    "label": "Move/stop acknowledgements",
+    "hex": "23 23",
+    "text": "b'##'",
+    "time": 1792601478.3791823
+  },
+  {
+    "label": "Position after TX",
+    "hex": "7a",
+    "text": "b'z'",
+    "time": 1792601479.3792276
+  },
+  {
+    "label": "Position after RX",
+    "hex": "30 33 33 39 37 44 30 30 2c 30 30 30 30 30 43 30 30 23",
+    "text": "b'03397D00,00000C00#'",
+    "time": 1792601479.5251958
+  },
+  {
+    "label": "Final stop TX",
+    "hex": "50 02 10 24 00 00 00 00",
+    "text": "b'P\\x02\\x10$\\x00\\x00\\x00\\x00'",
+    "time": 1792601479.5252266
+  },
+  {
+    "label": "Final stop RX",
+    "hex": "23",
+    "text": "b'#'",
+    "time": 1792601479.5861812
+  },
+  {
+    "label": "Stopped position TX",
+    "hex": "7a",
+    "text": "b'z'",
+    "time": 1792601481.5862675
+  },
+  {
+    "label": "Stopped position RX",
+    "hex": "30 33 33 39 37 44 30 30 2c 30 30 30 30 30 43 30 30 23",
+    "text": "b'03397D00,00000C00#'",
+    "time": 1792601481.690189
+  },
+  {
+    "label": "Final echo TX",
+    "hex": "4b 78",
+    "text": "b'Kx'",
+    "time": 1792601481.6902084
+  },
+  {
+    "label": "Final echo RX",
+    "hex": "78 23",
+    "text": "b'x#'",
+    "time": 1792601481.7191753
+  },
+  {
+    "delta_degrees": [
+      3.9995598793029785,
+      0.0
+    ],
+    "stopped_position_stable": true
+  }
+]

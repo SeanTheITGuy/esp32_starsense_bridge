@@ -1,0 +1,42 @@
+menu "StarSense bring-up"
+choice BRINGUP_MODE
+    prompt "Independent interface test"
+    default BRINGUP_HC05
+config BRINGUP_HC05
+    bool "HC-05 binary UART echo (no USB host)"
+config BRINGUP_HC05_DIAG
+    bool "HC-05 read-only UART AT diagnostics (no USB host)"
+    help
+        Queries module identity/configuration only. Tries AT at 9600 and
+        38400 without changing stored settings or driving KEY/EN.
+config BRINGUP_USB_ENUM
+    bool "USB descriptor enumeration only (verify VBUS wiring first)"
+    help
+        Enables native USB host. Requires a verified protected 5 V VBUS
+        circuit. Does not initialize PL2303 or forward telescope commands.
+config BRINGUP_PL2303_ECHO
+    bool "PL2303 HXD independent handset echo (Kx only)"
+    help
+        Initializes only the verified HXD USB descriptor family, then sends
+        the Celestron echo request. No motion commands or HC-05 traffic.
+config BRINGUP_BRIDGE
+    bool "Transparent PL2303 HXD to HC-05 bridge"
+    help
+        Both interfaces have passed independent hardware tests. Initializes
+        the measured HXD serial device and forwards bytes in both directions.
+        No automatic echo requests or telescope commands are generated.
+endchoice
+config JDY31_DISABLE_STATUS
+    bool "JDY-31 diagnostic: disable UART status reports after identity check"
+    depends on BRINGUP_HC05_DIAG
+    default n
+    help
+        Only after a JDY-31 version response, sends AT+ENLOG0 and verifies
+        readback. Does not change the module name, PIN, baud or pairing.
+config JDY31_RENAME_CELESTRON
+    bool "JDY-31 diagnostic: rename module CELESTRON after identity check"
+    depends on BRINGUP_HC05_DIAG
+    default n
+    help
+        Sends AT+NAMECELESTRON and verifies readback after JDY-31 identification.
+endmenu

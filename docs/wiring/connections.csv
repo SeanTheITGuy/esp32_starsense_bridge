@@ -1,0 +1,12 @@
+net,endpoint_1,endpoint_2,notes
+UART_TO_S3,JDY-31 TXD,ESP32-S3 GPIO16,3.3 V logic; UART1 RX
+UART_TO_JDY,ESP32-S3 GPIO17,JDY-31 RXD,3.3 V logic; UART1 TX
+BT_CONNECTED,JDY-31 STATE,ESP32-S3 GPIO18,Active high; required
+USB_DM,Mini-B contact 2 D-,ESP32-S3 GPIO19,Native USB data; not UART
+USB_DP,Mini-B contact 3 D+,ESP32-S3 GPIO20,Native USB data; not UART
+GROUND,Mini-B contact 5 GND,ESP32-S3 GND,Common ground
+GROUND,JDY-31 GND,ESP32-S3 GND,Common ground
+HOST_5V,Verified protected 5 V net,Mini-B contact 1 VBUS,Exact board header pad must be identified
+MODULE_SUPPLY,Verified appropriate breakout supply,JDY-31 VCC,5 V only if actual breakout is rated for 5 V
+UNCONNECTED,Mini-B contact 4 ID,None,Insulate if exposed
+UNCONNECTED,JDY-31 EN or KEY,None,Not driven

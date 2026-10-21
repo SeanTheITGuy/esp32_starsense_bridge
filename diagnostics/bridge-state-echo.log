@@ -1,0 +1,3 @@
+Session 1
+round 1: TX 4b 78 (Kx); RX b'' []
+FAIL: expected exactly x#; check bridge readiness, baud and handset state

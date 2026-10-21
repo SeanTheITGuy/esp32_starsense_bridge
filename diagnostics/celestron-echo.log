@@ -1,0 +1,6 @@
+round 1: TX 4b 78 (Kx); RX b'x#' [78 23]
+round 2: TX 4b 78 (Kx); RX b'x#' [78 23]
+round 3: TX 4b 78 (Kx); RX b'x#' [78 23]
+round 4: TX 4b 78 (Kx); RX b'x#' [78 23]
+round 5: TX 4b 78 (Kx); RX b'x#' [78 23]
+PASS: 5 exact Kx -> x# transactions

@@ -1,0 +1,45 @@
+Session 1: RFCOMM connected
+round 1: 256 bytes OK
+round 2: 63 bytes OK
+round 3: 168 bytes OK
+round 4: 219 bytes OK
+round 5: 99 bytes OK
+round 6: 11 bytes OK
+round 7: 57 bytes OK
+round 8: 29 bytes OK
+round 9: 106 bytes OK
+round 10: 159 bytes OK
+round 11: 168 bytes OK
+round 12: 83 bytes OK
+round 13: 254 bytes OK
+round 14: 253 bytes OK
+round 15: 172 bytes OK
+round 16: 249 bytes OK
+round 17: 253 bytes OK
+round 18: 80 bytes OK
+round 19: 143 bytes OK
+round 20: 37 bytes OK
+Session 1: PASS 2859 bytes in 20 transactions
+Session 2: RFCOMM connected
+round 1: 256 bytes OK
+round 2: 235 bytes OK
+round 3: 190 bytes OK
+round 4: 124 bytes OK
+round 5: 185 bytes OK
+round 6: 3 bytes OK
+round 7: 13 bytes OK
+round 8: 79 bytes OK
+round 9: 168 bytes OK
+round 10: 75 bytes OK
+round 11: 7 bytes OK
+round 12: 163 bytes OK
+round 13: 50 bytes OK
+round 14: 72 bytes OK
+round 15: 138 bytes OK
+round 16: 130 bytes OK
+round 17: 97 bytes OK
+round 18: 147 bytes OK
+round 19: 91 bytes OK
+round 20: 135 bytes OK
+Session 2: PASS 2358 bytes in 20 transactions
+PASS: byte-perfect forwarding and RFCOMM close/reconnect

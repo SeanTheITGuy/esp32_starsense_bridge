@@ -1,0 +1,17 @@
+menu "StarSense transparent bridge"
+config HC05_STATE_GPIO
+    int "HC-05 STATE input GPIO (-1 disables forwarding)"
+    range -1 48
+    default -1
+    help
+        Requires verified active-high 3.3 V STATE. This module emits UART
+        status text on Bluetooth disconnect, so STATE gates disconnected
+        traffic without interpreting payload bytes. -1 fails closed.
+config BRIDGE_TRACE_HEX
+    bool "Log USB payloads in hexadecimal on COM (development only)"
+    default n
+config BRIDGE_STARTUP_MS
+    int "Handset startup guard after USB setup (ms)"
+    range 0 30000
+    default 10000
+endmenu

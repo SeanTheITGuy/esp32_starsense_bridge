@@ -1,0 +1,21 @@
+menu "StarSense PL2303 echo test"
+config PL2303_TEST_BAUD
+    int "Handset serial baud to test"
+    range 1200 115200
+    default 9600
+config PL2303_TEST_CONTROL_LINES
+    int "Control lines (0=both low, 1=DTR, 2=RTS, 3=both high)"
+    range 0 3
+    default 0
+config PL2303_TEST_ROUNDS
+    int "Echo transactions per USB connection"
+    range 1 100
+    default 5
+config PL2303_TEST_SETTLE_MS
+    int "Delay after USB setup before first handset echo (ms)"
+    range 500 30000
+    default 10000
+    help
+        USB enumeration can complete before the USB-powered handset's normal
+        application has booted. This delay applies only to the echo test.
+endmenu
